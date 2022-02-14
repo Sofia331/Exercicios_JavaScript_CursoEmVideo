@@ -4,11 +4,10 @@ function carregar() {
     var letra = window.document.querySelector('footer')
     var letra1 = window.document.querySelector('header')
     var data= new Date()
-    //var hora = data.getHours()
-    var hora = 12
+    var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas.`
 
-    if (hora>= 0 && hora < 12){
+    if (hora >= 0 && hora < 12){
         //bom dia
         img.style.backgroundImage = ('url(img/manhã.jpg)')
         
