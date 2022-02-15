@@ -12,7 +12,7 @@ function verificar() {
         
         var genero = ''
         if (sexo[0].checked) {
-            genero = 'Homem'
+            genero = ' homem'
             if (idade >= 0 && idade < 10){
                 //Criança
             } else if (idade < 23) {
@@ -23,7 +23,7 @@ function verificar() {
                 //Idoso
             }
         } else if (sexo[1].checked) {
-            genero = 'Mulher'
+            genero = 'a mulher'
             if (idade >= 0 && idade < 10){
                 //Criança
             } else if (idade < 23) {
@@ -35,7 +35,7 @@ function verificar() {
             }
         }
         
-        res.innerHTML = `${genero} e ${idade}` 
+        res.innerHTML = `Você é um${genero} e tem ${idade} anos.` 
     }
 
 
