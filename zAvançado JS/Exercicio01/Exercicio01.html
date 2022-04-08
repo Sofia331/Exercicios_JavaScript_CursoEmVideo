@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vamos Contar</title>
+    <title>Analisando Números</title>
     <link rel="stylesheet" href="Exercicio01.css">
 </head>
 <body>
     
     <header>
-        <h1>Vamos Contar</h1>
+        <h1>Analisando Números</h1>
     </header>
 
     <section>
-        <div id="dados">
-            <p> Iniciar em: <input type="number" id="txtI"></p>
-            <p> Finalizar em: <input type="number" id="txtF"></p>
-            <p> E ir pulando de : <input type="number" id="txtP"></p>
-            <p><input type="button" value="Verificar" onclick='contar()'></p>
+        <div>
+            <p> Números (entre 01 á 100) : <input type="number" id="txtI"></p>
+            <p><input type="button" value="Adicionar" onclick='adicionar()'></p>
         </div>
-        
-        <div id="res">
-            <p>Preparando seu resultado...</p>
+        <div>
+            <p> Números adicionados : </p>
+            <select name="flistar" id="flistar" size="6"></select>
+            <p><input type="button" value="Analizar" onclick='analizar()'></p>
         </div>
-        
         
         
     </section>
